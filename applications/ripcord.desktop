@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Ripcord
+Comment=Ripcord
+Exec=/data/cellar/ripcord.sh
+Icon=/data/sysConfigs/icons/ripcord.png
+Terminal=false
+Type=Application
+X-GNOME-UsesNotifications=true

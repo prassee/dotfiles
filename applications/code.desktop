@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=VSCode
+Comment=VSCode
+Exec=/data/cellar/VSCode-linux-x64/code --disable-gpu --unity-launch %F
+Icon=/data/cellar/VSCode-linux-x64/resources/app/resources/linux/code.png
+Terminal=false
+Type=Application

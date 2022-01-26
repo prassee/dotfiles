@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sublime Merge
+Comment=Sophisticated text editor for code, markup and prose
+Exec='/data/cellar/sublime_merge/sublime_merge'
+Icon=/data/cellar/sublime_merge/Icon/128x128/sublime-merge.png
+Terminal=false
+StartupWMClass=sublime_merge

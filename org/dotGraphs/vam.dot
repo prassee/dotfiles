@@ -1,0 +1,25 @@
+graph {
+  imagescale=both
+  bgcolor="lightblue"
+  label="Home"
+  outsider1 -- a
+  outsider2 -- kitchen
+
+  subgraph cluster_ground_floor {
+    bgcolor="lightgreen"
+    label="Ground Floor"
+    Lounge
+    Kitchen
+  }
+  subgraph cluster_top_floor {
+    fontname="ubuntu"
+    bgcolor="lightyellow"
+    label="Top Floor"
+    Bedroom [fontname="ubuntumono"]
+    Bathroom [fontname="ubuntumono"]
+    a -- Bedroom
+    c -- Kitchen
+    a -- c
+    a -- Bathroom
+  }
+}

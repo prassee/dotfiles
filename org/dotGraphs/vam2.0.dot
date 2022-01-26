@@ -1,0 +1,8 @@
+graph {
+  imagescale=both
+  rankdir=LR;
+  bgcolor="lightblue"
+  label="Home"
+  outsider1 -- a
+  outsider2 -- Kitchen
+}

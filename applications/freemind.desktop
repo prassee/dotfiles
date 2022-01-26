@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Freemind
+Comment=Freemind
+Exec=/data/cellar/freemind-bin-1.0.1/startfm.sh
+Terminal=false
+Type=Application
+X-GNOME-UsesNotifications=true

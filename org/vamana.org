@@ -1,0 +1,9 @@
+* Vamana
+** TODO Vamana Infra Reorg                                            :vamana:  
+- move blog , gitea and other services to vamana component server
+- [ ] retain the smallest of the all 
+- remove 2 VM's for blog and gits
+- shrink from 5 to 2
+  - one for bastion
+  - other for running services
+  <2021-11-12 Fri 07:41>

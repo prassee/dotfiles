@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sublime Text
+Comment=Sophisticated text editor for code, markup and prose
+Exec='/data/sysConfigs/startSublime.sh'
+Icon=/data/cellar/sublime_text/Icon/128x128/sublime-text.png
+Terminal=false
+StartupWMClass=sublime_text

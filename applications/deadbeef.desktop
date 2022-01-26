@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=DeadBeef
+Comment=DeadBeef
+Exec=/data/cellar/deadbeef-1.8.4/deadbeef
+Icon=/data/cellar/deadbeef-1.8.4/deadbeef.png
+Terminal=false
+Type=Application
+X-GNOME-UsesNotifications=true

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Slack
+StartupWMClass=slack
+Comment=All-in-one voice and text chat for office.
+GenericName=Internet Messenger
+Icon=/data/sysConfigs/icons/slack.png
+Exec=/data/linuxutils/slack --disable-gpu
+Type=Application
+Categories=Network;InstantMessaging;

@@ -1,0 +1,56 @@
+* TODO Vinay's advice on leetcode
+** Track - 1 (Practical)
+*** For first 7 days - only 30 minutes each day.
+  - just *login* every day, and don't try to solve anything.
+  - don't even read the problems.
+  - Just browse through the website for 30 minutes.
+  - Do it at a consistent time every single day.
+ - And if you break 1 day, reset your counter to 0 and redo the 7 days.
+    
+*** For next 7 days - only 30 minutes each day.
+ - only login and read problems.
+    
+*** For next 7 days - only 45 minutes each day.
+  - try solving one problem a day (Don't worry if you can't)
+  - Only touch the easy ones. Sort by descending acceptance rate. Pick the highest acceptance rate.
+    
+***  for next 7 days - 1 hr each day.
+  - repeat same as above
+
+** MEASURE EVERYTHING
+  - When you log in,
+  - When you log out.
+  - Which problem you read.
+  - When you begin reading.
+  - When you stop reading.
+  - When you begin solving.
+  - When you got the solution
+    
+** Track - 2 (theory) - LRDE*
+  - *Books*
+   - A Common Sense Guide to Data Structures and Algorithms
+   - Problem solving with Data Structures and Algorithms in Python)
+   - *start* learning basic data structures
+   - arrays
+   - strings
+   - linked list - (2 weeks)
+   - stacks
+   - queues
+   - *trees*
+   - graphs
+   - *dynamic programming*
+
+
+* TODO leetcode site
+** Day - 1 - 
+DEADLINE: <2022-01-23 Sun>
+- signup complete 
+- site has both free and premium features
+- there are study plans for both algo & ds
+- questions can be found based and DS & algo or even db or system design
+- almost 18 programming languages supported - Java ,Go , Rust , Scala , Kotlin
+- julia missing though but the above 5 fits for me.
+- yet python is also a most popular choice
+- vidoe based solution explanation is  blocked for free users
+
+  

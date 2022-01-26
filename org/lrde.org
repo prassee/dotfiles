@@ -1,0 +1,7 @@
+* LRDE
+** TODO Rust Programming book                                           :rust:  
+ - ownership & lifetimes - Overview
+ <2021-11-11 Thu 08:42>
+** FEATURE/IDEA dag datastruct in Rust                                          :rust:  
+ - DAG ds in *Rust* with some level of 2021 
+  <depth-11-11 Thu 08:43>

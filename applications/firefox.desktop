@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox
+GenericName=Browser
+Comment=Browser
+Exec=/data/linuxutils/firefox/firefox %u
+Icon=/data/linuxutils/firefox/browser/chrome/icons/default/default128.png
+Terminal=false
+Type=Application
+StartupNotify=true
