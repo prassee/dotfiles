@@ -84,7 +84,7 @@ exec --no-startup-id xautolock -detectsleep -time 5 -locker "i3lock-fancy"
 exec --no-startup-id syndaemon -i 0.5 -m 150  -d -k -R -t  
 exec --no-startup-id xset fp+ /usr/share/fonts/
 exec --no-startup-id dunst -conf /data/dotfiles/i3/dunst.conf
-#exec --no-startup-id brightnessctl s 648
+exec --no-startup-id brightnessctl s 3
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id feh --no-fehbg --bg-scale '/data/sysConfigs/wallpapers/gumkaRing.jpg'
 
@@ -160,13 +160,12 @@ set $ws9 9
 #*** Workspace specific settings ***                 #
 ##==================================================##
 # Assign Workspaces:
-assign [class="Alacritty"] $ws1
-assign [class="Firefox"] $ws1
-assign [class="Microsoft-edge"] $ws1
-assign [class="Atril"] $ws2
+assign [class="urxvt"] $ws1
+assign [class="Firefox"] $ws2
+assign [class="Microsoft-edge"] $ws2
 assign [class="DBeaver"] $ws2
 assign [class="Telegram"] $ws3
-assign [class="Slack"] $ws3
+assign [class="Slack"] $ws4
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -203,7 +202,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 #shutdown immediately - no warnings...
-#bindsym $mod+Shift+p exec systemctl poweroff
+bindsym $mod+Shift+p exec systemctl poweroff
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

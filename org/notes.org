@@ -5,7 +5,7 @@
   - don't even read the problems.
   - Just browse through the website for 30 minutes.
   - Do it at a consistent time every single day.
- - And if you break 1 day, reset your counter to 0 and redo the 7 days.
+  - And if you break 1 day, reset your counter to 0 and redo the 7 days.
     
 *** For next 7 days - only 30 minutes each day.
  - only login and read problems.
