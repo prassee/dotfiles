@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Name=Insomnia
-Comment=Insomnia
-Exec=/data/linuxutils/insomnia --disable-gpu
-Icon=/data/sysConfigs/icons/insomnia.svg
-Terminal=false
-Type=Application
-X-GNOME-UsesNotifications=true

@@ -1,0 +1,26 @@
+* TODO installing emacs
+** fresh install 
+- git clone git://git.sv.gnu.org/emacs.git
+- cd emacs
+- ./autogen.sh
+- ./configure --with-json
+- make -j8
+- sudo make install
+** daily updates
+- cd /data/cellar/emacs
+- git fetch
+- git pull origin
+- same steps as `fresh install`
+  
+
+* TODO how to add more files to org agenda 
+-Add following lines to
+
+org-agenda-files
+      (list "/data/dotfiles/org/general.org" "/data/dotfiles/org/lrde.org" "/data/dotfiles/org/office.org" "/data/dotfiles/org/vamana.org" "/data/dotfiles/org/notes.org" "/data/dotfiles/org/documentation.org" "/data/dotfiles/org/notes.org" )
+
+
+* TODO install nodejs 
+- download nodejs from  https://nodejs.org/en/download/
+- extract dwn'ded tar to /data/cellar
+- symlink under /data/linuxutils 
