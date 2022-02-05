@@ -6,7 +6,8 @@ Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
 
-!URxvt.font:xft:scientifica:size=13
+! URxvt.font:xft:terminus:size=14
+! URxvt.*boldFont:xft:terminus:size=14
 !URxvt.font: xft:DejaVu Sans:pixelsize=14,xft:Symbola,xft:Noto Emoji:minspace=False
 
 URxvt.font: xft:PragmataPro Mono Liga:size=20.4,xft:PragmataPro Mono Liga,xft:Noto Color Emoji:minspace=True
@@ -45,7 +46,7 @@ URxvt.scrollStyle:          rxvt
 ! Perl extensions
 URxvt.perl-ext-common:      default,matcher
 URxvt.matcher.button:       1
-URxvt.urlLauncher:          waterfox
+URxvt.urlLauncher:          firefox
 
 ! Cursor
 URxvt.cursorBlink:          true
