@@ -1,0 +1,6 @@
+* Notes
+** TODO onboarding new chian on CH :office,dags:  
+ - dictionaries
+ - sharded tables
+ - mat .views
+ <2022-02-05 Sat 05:47>

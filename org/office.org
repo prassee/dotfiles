@@ -12,3 +12,16 @@ Yesterday
    Today 
  - will update the dev-airflow
  <2022-01-21 Fri 10:08>
+** TODO do stuff  DEADLINE: <2022-01-31 Mon 09:12>                    :office: 
+ - asdll 
+ <2022-01-29 Sat 09:12>
+** TODO mining entities DEADLINE: <2022-02-01 Tue 08:59>                 :DAG: 
+ - new dag for
+   - cold start
+   - regular run - weekly once 
+ <2022-02-01 Tue 08:59>
+** TODO DF jobs fix & redeploy DEADLINE: <2022-02-01 Tue 09:00>           :DF: 
+ - all DF jobs
+   - CH & TG jobs to be redeployed with retry
+   - fix bifrost price exception flow 
+ <2022-02-01 Tue 09:00>

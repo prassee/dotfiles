@@ -5,3 +5,7 @@
 ** FEATURE/IDEA dag datastruct in Rust                                          :rust:  
  - DAG ds in *Rust* with some level of 2021 
   <depth-11-11 Thu 08:43>
+** TODO rust                                                            :rust: 
+ - more about ownership
+ - 
+ <2022-01-29 Sat 09:41>

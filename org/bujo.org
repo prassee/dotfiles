@@ -1,5 +1,3 @@
-
-
 * today 
 - complete the DF job fixes
 - dessign for radar for crypto
