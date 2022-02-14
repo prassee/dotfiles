@@ -1,17 +1,19 @@
 * TODO installing emacs
 ** fresh install 
 - git clone git://git.sv.gnu.org/emacs.git
-- cd emacs
+- cd *emacs*
 - ./autogen.sh
 - ./configure --with-json
 - make -j8
 - sudo make install
-** daily updates
+** updates
 - cd /data/cellar/emacs
 - git fetch
 - git pull origin
-- same steps as `fresh install`
-  
+- ./autogen.sh
+- ./configure --with-json
+- make -j8
+- sudo make install  
 
 * TODO how to add more files to org agenda 
 -Add following lines to
@@ -24,3 +26,18 @@ org-agenda-files
 - download nodejs from  https://nodejs.org/en/download/
 - extract dwn'ded tar to /data/cellar
 - symlink under /data/linuxutils 
+
+
+* TODO chain data migration to chv21 
+- run following dags to setup tables on ch-v21
+  1. run setup dictionaries
+  2. run setup sharded tables
+  3. run setup tables
+- cold start base table by copying data from ch-v19 via clickhouse copier
+  - Note this step is only required if migrating data from existing cluster
+- run daily run dags
+  - ensure that GCS has data
+    - yes - proceed further
+    - no - run exoprt enriched dag to fill the data
+      - this step helps to fill in the past data as well if airflow dag run history is not available
+  

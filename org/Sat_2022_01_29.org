@@ -12,11 +12,11 @@
   :CREATED: [2022-01-29 Sat]
   :END:
   - visit the site
-  -
 * TODO [#E] how to fix tap leakages
   :PROPERTIES:
   :CREATED: [2022-01-29 Sat]
   :END:
   - identify
 	** TODO
+    - *bold* /italics/ =code= ~verbatim~
 

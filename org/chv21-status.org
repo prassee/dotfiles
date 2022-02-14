@@ -1,0 +1,22 @@
+* ch-v21 data load status
+
+ch-v21 *cluster*
+
+| chain | ch-copier   | create dicts | create sharded tbls | create tbls | on daily etls | out for qa | copied to txn_cold tables |
+|-------+-------------+--------------+---------------------+-------------+---------------+------------+--------------------------|
+| BTC   | done        | done         | done                | done        | done          | yes        | done                     |
+| LTC   | done        | done         | done                | done        | done          | yes        | done                     |
+| DOGE  | done        | done         | done                | done        | done          | yes        | done                     |
+| BCH   | done        | done         | done                | done        | done          | yes        | done                     |
+| BSV   | done blocks | done         | done                | done        |               |            |                          |
+| XRP   | todo        | done         | done                | done        |               |            |                          |
+| ZIL   | done        | done         | done                | done        |               |            |                          |
+
+- ZIL ddl to be revisited and start the daily etls - to start
+  - all DDLs cool ? 
+- XRP to start 
+  - [ ] chcopier
+  - [ ] daily etl
+- BSV
+  - copy the data over to txn_cold tables 
+  - start daily /ETL/

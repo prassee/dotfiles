@@ -7,3 +7,14 @@
   - one for bastion
   - other for running services
   <2021-11-12 Fri 07:41>
+** TODO Revamp Infra DEADLINE: <2022-02-08 Tue 08:46>                 :vamana: 
+ - eval cloud providers
+ - reclaim scaleway account
+   - talk to SW cust support 
+ <2022-02-08 Tue 08:46>
+** TODO redraft radar DEADLINE: <2022-02-08 Tue 09:01>  :vamana,radar: 
+ 
+ <2022-02-08 Tue 09:01>
+** TODO asfsf DEADLINE: <2022-02-08 Tue 09:03>               :vamana:DF:rust: 
+ asff
+ <2022-02-08 Tue 09:03>

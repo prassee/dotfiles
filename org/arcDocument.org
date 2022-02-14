@@ -1,0 +1,49 @@
+* Architecture document using embedded  mermaid mode [Trail]
+
+** How 2 component works
+
+- works for *bold*  letters 
+#+begin_src mermaid :file test.png
+sequenceDiagram
+ Streamer-->Kafka: Publish facets
+#+end_src
+- works for non *bold* letter 
+#+RESULTS:
+[[file:test.png]]
+** How 3 component works
+
+#+begin_src mermaid :file test2.png
+  sequenceDiagram
+  A-->B: Send
+  B-->C: Receive
+#+end_src
+
+#+RESULTS:
+[[file:test2.png]]
+** CH Table stack
+#+begin_src mermaid :file test2.png
+  sequenceDiagram
+  A-->B: Send
+  B-->C: Receive
+#+end_src
+
+#+RESULTS:
+[[file:test2.png]]
+
+#+begin_src mermaid :file test2.png
+  sequenceDiagram
+  A-->B: Send
+  B-->C: Receive
+#+end_src
+
+#+RESULTS:
+[[file:test2.png]]
+
+ #+begin_src mermaid :file testx.png
+   sequencediagram
+   B --> C: send
+   C --> E: receive
+ #+end_src
+
+ #+RESULTS:
+ [[file:testx.png]]

@@ -33,7 +33,7 @@ floating_modifier $mod
 for_window [class="Gmrun"] floating enable
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec urxvt -vb  
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -161,10 +161,10 @@ set $ws9 9
 ##==================================================##
 # Assign Workspaces:
 assign [class="urxvt"] $ws1
-assign [class="Firefox"] $ws2
-assign [class="Microsoft-edge"] $ws2
-assign [class="DBeaver"] $ws2
-assign [class="Telegram"] $ws3
+# assign [class="Firefox"] $ws2
+# assign [class="Microsoft-edge"] $ws2
+# assign [class="DBeaver"] $ws2
+assign [class="Telegram"] $ws4
 assign [class="Slack"] $ws4
 
 # switch to workspace

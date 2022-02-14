@@ -25,3 +25,24 @@ Yesterday
    - CH & TG jobs to be redeployed with retry
    - fix bifrost price exception flow 
  <2022-02-01 Tue 09:00>
+** TODO today onboarding DEADLINE: <2022-02-07 Mon 12:28>              :chv21: 
+ - XRP DDL - Airflow DAGs find from Saurabh how the DDL's are close to reality 
+ - fix the sql for refresh MVS and how to stagger it on a basis year
+ - run the export enriched for BSV blocks from oct 2021 
+ <2022-02-07 Mon 12:28>
+** TODO execute SQL commands for Mat refresh DEADLINE: <2022-02-09 Wed 07:27> :airflow: 
+ - create ref mat views
+ - execute them on each node and shard 
+ <2022-02-08 Tue 07:27>
+** TODO how to change airflow-dags structure 
+- instead of function centric like setup-dictionaries , setup-sharded-tables etc
+- make it chain centric i.e a new folder for each chain
+  - create dag by  calling funtions
+  - to setup tables
+- create a separate repo containing the dags only for DDLs 
+- gadmin restart rest pp kill any hanging job 
+** TODO stanup updates DEADLINE: <2022-02-08 Tue 09:00>              :office: :standup:
+
+- start  
+ 
+ <2022-02-08 Tue 09:00>

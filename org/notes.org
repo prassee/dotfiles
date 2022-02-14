@@ -5,11 +5,11 @@
   - don't even read the problems.
   - Just browse through the website for 30 minutes.
   - Do it at a consistent time every single day.
-  - And if you break 1 day, reset your counter to 0 and redo the 7 days.
+  - And if you *break* 1 day, reset your counter to 0 and redo the 7 days.
     
 *** For next 7 days - only 30 minutes each day.
- - only login and read problems.
-    
+ - only login and read *problems*.
+       
 *** For next 7 days - only 45 minutes each day.
   - try solving one problem a day (Don't worry if you can't)
   - Only touch the easy ones. Sort by descending acceptance rate. Pick the highest acceptance rate.
@@ -27,7 +27,7 @@
   - When you got the solution
     
 ** Track - 2 (theory) - LRDE*
-  - *Books*
+   - *Books*
    - A Common Sense Guide to Data Structures and Algorithms
    - Problem solving with Data Structures and Algorithms in Python)
    - *start* learning basic data structures
@@ -39,8 +39,8 @@
    - *trees*
    - graphs
    - *dynamic programming*
-
-
+     
+     
 * TODO leetcode site
 ** Day - 1 - 
 DEADLINE: <2022-01-23 Sun>

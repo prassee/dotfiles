@@ -1,0 +1,353 @@
+* all office sql
+
+#+BEGIN_SRC
+  INSERT
+	INTO
+	zilliqa.tld_cold (
+		block,
+		transaction_id,
+		sender_address,
+		receiver_address,
+		`type`,
+		token_address,
+		coin_value,
+		fee,
+		block_date_time,
+		log_index
+	)
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	0 AS TYPE,
+	'0x0000' AS token_address,
+	multiIf(
+		receipt_status = 1,
+		toFloat64(value) / POW(
+			10,
+			12
+		),
+		0
+	) AS coin_value,
+	toFloat64(
+		fee / POW(
+			10,
+			12
+		)
+	) AS fee,
+	block_timestamp AS block_date_time,
+	-1 AS log_index
+FROM
+	zilliqa.transactions
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	1 AS TYPE,
+	'0x0000' AS token_address,
+	toFloat64(value) / POW(
+		10,
+		12
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index
+FROM
+	zilliqa.traces
+WHERE
+	value > 0
+	AND receipt_status = 1
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	2 AS TYPE,
+	token_address AS token_address,
+	toFloat64(value) / pow(
+		10,
+		dictGetUInt8(
+			'zilliqa.tokens_metadata_dict',
+			'decimals',
+			tuple(token_address)
+		)
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index AS log_index
+FROM
+	zilliqa.token_transfers
+WHERE
+	token_address IN (
+		SELECT
+			address
+		FROM
+			zilliqa.tokens_metadata
+	)
+	AND receipt_status = 1;
+#+END_SRC
+
+#+BEGIN_SRC
+  INSERT
+	INTO
+	zilliqa.tld_in_cold  (
+		block,
+		transaction_id,
+		sender_address,
+		receiver_address,
+		`type`,
+		token_address,
+		coin_value,
+		fee,
+		block_date_time,
+		log_index
+	)
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	0 AS TYPE,
+	'0x0000' AS token_address,
+	multiIf(
+		receipt_status = 1,
+		toFloat64(value) / POW(
+			10,
+			12
+		),
+		0
+	) AS coin_value,
+	toFloat64(
+		fee / POW(
+			10,
+			12
+		)
+	) AS fee,
+	block_timestamp AS block_date_time,
+	-1 AS log_index
+FROM
+	zilliqa.transactions
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	1 AS TYPE,
+	'0x0000' AS token_address,
+	toFloat64(value) / POW(
+		10,
+		12
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index
+FROM
+	zilliqa.traces
+WHERE
+	value > 0
+	AND receipt_status = 1
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	2 AS TYPE,
+	token_address AS token_address,
+	toFloat64(value) / pow(
+		10,
+		dictGetUInt8(
+			'zilliqa.tokens_metadata_dict',
+			'decimals',
+			tuple(token_address)
+		)
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index AS log_index
+FROM
+	zilliqa.token_transfers
+WHERE
+	token_address IN (
+		SELECT
+			address
+		FROM
+			zilliqa.tokens_metadata
+	)
+	AND receipt_status = 1;
+#+END_SRC
+
+#+BEGIN_SRC
+  INSERT
+	INTO
+	zilliqa.tld_out_cold  (
+		block,
+		transaction_id,
+		sender_address,
+		receiver_address,
+		`type`,
+		token_address,
+		coin_value,
+		fee,
+		block_date_time,
+		log_index
+	)
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	0 AS TYPE,
+	'0x0000' AS token_address,
+	multiIf(
+		receipt_status = 1,
+		toFloat64(value) / POW(
+			10,
+			12
+		),
+		0
+	) AS coin_value,
+	toFloat64(
+		fee / POW(
+			10,
+			12
+		)
+	) AS fee,
+	block_timestamp AS block_date_time,
+	-1 AS log_index
+FROM
+	zilliqa.transactions
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	1 AS TYPE,
+	'0x0000' AS token_address,
+	toFloat64(value) / POW(
+		10,
+		12
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index
+FROM
+	zilliqa.traces
+WHERE
+	value > 0
+	AND receipt_status = 1
+UNION ALL
+SELECT
+	0 AS block,
+	transaction_hash AS transaction_id,
+	from_address AS sender_address,
+	to_address AS receiver_address,
+	2 AS TYPE,
+	token_address AS token_address,
+	toFloat64(value) / pow(
+		10,
+		dictGetUInt8(
+			'zilliqa.tokens_metadata_dict',
+			'decimals',
+			tuple(token_address)
+		)
+	) AS coin_value,
+	0 AS fee,
+	block_timestamp AS block_date_time,
+	log_index AS log_index
+FROM
+	zilliqa.token_transfers
+WHERE
+	token_address IN (
+		SELECT
+			address
+		FROM
+			zilliqa.tokens_metadata
+	)
+	AND receipt_status = 1;
+#+END_SRC
+
+* SQL to propogate write
+#+begin_src
+SET max_memory_usage=900000000000000;
+SET max_insert_threads=14;
+
+
+INSERT INTO bitcoin_cash_sv.txns_cold
+SELECT
+  toUnixTimestamp(now()) AS insert_time,
+  transactions_staging.transaction_id AS transaction_id,
+  transactions_staging.block_number AS block_number,
+  transactions_staging.block_hash AS block_hash,
+  transactions_staging.block_date_time AS block_date_time,
+  transactions_staging.is_coinbase AS is_coinbase,
+  transactions_staging.lock_time AS lock_time,
+  transactions_staging.size AS size,
+  transactions_staging.virtual_size AS virtual_size,
+  transactions_staging.weight AS weight,
+  transactions_staging.version AS version,
+  transactions_staging.input_count AS input_count,
+  transactions_staging.output_count AS output_count,
+  transactions_staging.input_value AS input_value,
+  transactions_staging.output_value AS output_value,
+  transactions_staging.fee AS fee,
+  transactions_staging.inputs.value AS "inputs.value",
+  transactions_staging.inputs.type AS "inputs.type",
+  transactions_staging.inputs.required_signatures AS "inputs.required_signatures",
+  transactions_staging.inputs.index AS "inputs.index",
+  transactions_staging.inputs.addresses AS "inputs.addresses",
+  transactions_staging.outputs.value AS "outputs.value",
+  transactions_staging.outputs.type AS "outputs.type",
+  transactions_staging.outputs.required_signatures AS "outputs.required_signatures",
+  transactions_staging.outputs.index AS "outputs.index",
+  transactions_staging.outputs.addresses AS "outputs.addresses",
+	1 as sign
+FROM bitcoin_cash_sv.transactions as transactions_staging;
+
+
+INSERT INTO bitcoin_cash_sv.txns_flat_cold
+SELECT
+toUnixTimestamp(now()) AS insert_time,
+transaction_id,
+tupleElement(arrayJoin(multiIf(txn.is_coinbase = 1, [('', 0, 0)], arrayMap((x,y,z) -> (x,y,z), inputs.addresses, inputs.value, inputs.index))) as sender_details, 1) sender_address,
+tupleElement(arrayJoin(arrayMap((x,y,z) -> (x,y,z), outputs.addresses, outputs.value, outputs.index)) as receiver_details, 1) receiver_address,
+tupleElement(sender_details, 3) input_index,
+tupleElement(receiver_details, 3) output_index,
+toDecimal128(multiIf(txn.is_coinbase = 1, tupleElement(receiver_details, 2)/1.0, txn.input_value=0, 0.0, (tupleElement(sender_details, 2)/txn.input_value) * tupleElement(receiver_details, 2)) / 1e8, 8) as incoming_value,
+toDecimal128(multiIf(txn.is_coinbase = 1, 0.0, txn.output_value=0, 0.0, (tupleElement(sender_details, 2)/txn.output_value) * tupleElement(receiver_details, 2)) / 1e8, 8) as outgoing_value,
+block_date_time,
+1 as sign
+FROM bitcoin_cash_sv.transactions as txn;
+
+INSERT INTO bitcoin_cash_sv.txns_flat_in_cold
+SELECT
+toUnixTimestamp(now()) AS insert_time,
+transaction_id,
+tupleElement(arrayJoin(multiIf(txn.is_coinbase = 1, [('', 0, 0)], arrayMap((x,y,z) -> (x,y,z), inputs.addresses, inputs.value, inputs.index))) as sender_details, 1) sender_address,
+tupleElement(arrayJoin(arrayMap((x,y,z) -> (x,y,z), outputs.addresses, outputs.value, outputs.index)) as receiver_details, 1) receiver_address,
+tupleElement(sender_details, 3) input_index,
+tupleElement(receiver_details, 3) output_index,
+toDecimal128(multiIf(txn.is_coinbase = 1, tupleElement(receiver_details, 2)/1.0, txn.input_value=0, 0.0, (tupleElement(sender_details, 2)/txn.input_value) * tupleElement(receiver_details, 2)) / 1e8, 8) as incoming_value,
+block_date_time,
+1 as sign
+FROM bitcoin_cash_sv.transactions as txn;
+
+INSERT INTO bitcoin_cash_sv.txns_flat_out_cold
+SELECT
+toUnixTimestamp(now()) AS insert_time,
+transaction_id,
+tupleElement(arrayJoin(multiIf(txn.is_coinbase = 1, [('', 0, 0)], arrayMap((x,y,z) -> (x,y,z), inputs.addresses, inputs.value, inputs.index))) as sender_details, 1) sender_address,
+tupleElement(arrayJoin(arrayMap((x,y,z) -> (x,y,z), outputs.addresses, outputs.value, outputs.index)) as receiver_details, 1) receiver_address,
+tupleElement(sender_details, 3) input_index,
+tupleElement(receiver_details, 3) output_index,
+toDecimal128(multiIf(txn.is_coinbase = 1, 0.0, txn.output_value=0, 0.0, (tupleElement(sender_details, 2)/txn.output_value) * tupleElement(receiver_details, 2)) / 1e8, 8) as outgoing_value,
+block_date_time,
+1 as sign
+FROM bitcoin_cash_sv.transactions as txn;
+#+end_src

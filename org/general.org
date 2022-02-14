@@ -2,5 +2,12 @@
 ** TODO onboarding new chian on CH :office,dags:  
  - dictionaries
  - sharded tables
- - mat .views
- <2022-02-05 Sat 05:47>
+ - mat *.views*
+<2022-02-05 Sat 05:47>
+** TODO restore tg                                                        :tg:  
+ - gadmin status
+ - see if there are any load jobs
+ - gsql usegraph ethereum show loading status all 
+ - if any loading jobs are running 
+   
+ <2022-02-07 Mon 19:24>
