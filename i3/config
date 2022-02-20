@@ -45,7 +45,7 @@ bindsym $mod+Shift+q kill
 # installed.
 bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'PragmataPro:pixelsize=24'"
 # Apps and settings
-bindsym $mod+b exec /data/linuxutils/firefox/firefox
+bindsym $mod+b exec /data/linuxutils/firefox/firefox -P
 bindsym $mod+Shift+g exec /data/linuxutils/telegram/Telegram
 bindsym $mod+Shift+l exec xautolock -locknow -locker "i3lock-fancy"
 bindsym $mod+Control+s exec --no-startup-id "sh /data/dotfiles/i3/i3suspend.sh"

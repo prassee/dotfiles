@@ -31,8 +31,8 @@ Yesterday
  - run the export enriched for BSV blocks from oct 2021 
  <2022-02-07 Mon 12:28>
 ** TODO execute SQL commands for Mat refresh DEADLINE: <2022-02-09 Wed 07:27> :airflow: 
- - create ref mat views
- - execute them on each node and shard 
+ - *create* ref mat views
+ - execute them on each node and shard
  <2022-02-08 Tue 07:27>
 ** TODO how to change airflow-dags structure 
 - instead of function centric like setup-dictionaries , setup-sharded-tables etc

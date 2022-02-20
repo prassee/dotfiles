@@ -7,5 +7,9 @@
   <depth-11-11 Thu 08:43>
 ** TODO rust                                                            :rust: 
  - more about ownership
- - 
  <2022-01-29 Sat 09:41>
+** TODO ETH                                                              :eth: 
+ - *tokens*
+ - how they are important
+ - NFT 
+ <2022-02-19 Sat 09:05>

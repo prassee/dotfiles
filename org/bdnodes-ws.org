@@ -1,0 +1,4 @@
+* blockdaemon nodes [0/2]
+- [ ] first telnet if ZMQ port is accessible
+  ~telnet c7limmj5s4ln4bv4mjq0.bdnodes.net 28333~
+- [ ] use the existing MP code to dry run on local ~mp-txn-exp~  repo

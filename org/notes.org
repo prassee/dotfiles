@@ -18,9 +18,9 @@
   - repeat same as above
 
 ** MEASURE EVERYTHING
-  - When you log in,
+  - When you log in
   - When you log out.
-  - Which problem you read.
+  - Which *problem* you read.
   - When you begin reading.
   - When you stop reading.
   - When you begin solving.
@@ -52,7 +52,7 @@ DEADLINE: <2022-01-23 Sun>
 - julia missing though but the above 5 fits for me.
 - yet python is also a most popular choice
 - vidoe based solution explanation is  blocked for free users
-
+  
 
 * TODO Local contacts
 9182863233 - Ravi 
