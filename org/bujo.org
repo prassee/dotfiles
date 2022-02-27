@@ -1,4 +1,4 @@
 * today 
-- complete the DF job fixes
-- *redesign* /for/ *radar* for crypto
+- /complete/ the DF job fixes
+- /redesign /for/ *radar* for crypto
 

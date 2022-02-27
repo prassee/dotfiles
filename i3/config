@@ -18,7 +18,7 @@ set $mod Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font, such as:
-font pango: Pragmatapro 15
+font pango: Ubuntu bold 12
 
 # set some nice colors      border	   background	   text
 client.focused              #2aa198        #2aa198         #ffffff
@@ -43,7 +43,7 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'PragmataPro:pixelsize=24'"
+bindsym $mod+space exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Ubuntu:bold:pixelsize=24'"
 # Apps and settings
 bindsym $mod+b exec /data/linuxutils/firefox/firefox -P
 bindsym $mod+Shift+g exec /data/linuxutils/telegram/Telegram
@@ -238,7 +238,7 @@ bindsym $mod+r mode "resize"
 bar {
     tray_output eDP
     status_command i3blocks -c /data/dotfiles/i3/i3blocks.conf
-    font pango:PragmataPro,FontAwesome 15
+    font pango:Ubuntu,FontAwesome 12
     colors {
            background #021215
            statusline #93a1a1 

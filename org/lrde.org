@@ -9,7 +9,19 @@
  - more about ownership
  <2022-01-29 Sat 09:41>
 ** TODO ETH                                                              :eth: 
- - *tokens*
+ - *tokens* 
  - how they are important
- - NFT 
+ - NFT
+ - how to source token data / txns - is
+   - can we source eth-mempool data to do something useful
  <2022-02-19 Sat 09:05>
+** TODO TG  :chv21,schema: 
+ - understand address_in and address_out
+ - hwo the dictionaries data flows in
+ - 
+ <2022-02-23 Wed 10:35>
+** TODO polars-julia-wrapper                           :julia:rust:dataframes: 
+ - *julia* wrapper around rust polars
+ - julia API / package to route calls to rust - 1:1 mapping
+ - benchmark performace btw
+ <2022-02-27 Sun 11:36>

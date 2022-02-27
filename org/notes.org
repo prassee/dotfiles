@@ -53,8 +53,6 @@ DEADLINE: <2022-01-23 Sun>
 - yet python is also a most popular choice
 - vidoe based solution explanation is  blocked for free users
   
-
+  
 * TODO Local contacts
-9182863233 - Ravi 
-
-
+9182863233 - Ravi

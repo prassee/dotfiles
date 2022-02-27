@@ -14,25 +14,18 @@
 - ./configure --with-json
 - make -j8
 - sudo make install  
-
 * TODO how to add more files to org agenda 
 -Add following lines to
-
-org-agenda-files
-      (list "/data/dotfiles/org/general.org" "/data/dotfiles/org/lrde.org" "/data/dotfiles/org/office.org" "/data/dotfiles/org/vamana.org" "/data/dotfiles/org/notes.org" "/data/dotfiles/org/documentation.org" "/data/dotfiles/org/notes.org" )
-
-
+~org-agenda-files (list "/data/dotfiles/org/general.org" "/data/dotfiles/org/lrde.org" "/data/dotfiles/org/office.org" "/data/dotfiles/org/vamana.org" "/data/dotfiles/org/notes.org" "/data/dotfiles/org/documentation.org" "/data/dotfiles/org/notes.org" )~
 * TODO install nodejs 
 - download nodejs from  https://nodejs.org/en/download/
 - extract dwn'ded tar to /data/cellar
 - symlink under /data/linuxutils 
-
-
 * TODO chain data migration to chv21 
 - run following dags to setup tables on ch-v21
   1. run setup dictionaries
   2. run setup sharded tables
-  3. run setup tables
+  3. run *setup* tables
 - cold start base table by copying data from ch-v19 via clickhouse copier
   - Note this step is only required if migrating data from existing cluster
 - run daily run dags
@@ -40,14 +33,17 @@ org-agenda-files
     - yes - proceed further
     - no - run exoprt enriched dag to fill the data
       - this step helps to fill in the past data as well if airflow dag run history is not available
-
-
 * TODO mount sd card to a partition  
-- map sd card to a  mount point =sd-data=
+- map sd card to a  *mount point* =sd-data=
 - fille this area !!! 
-
-
 * TODO create new ch-nodes on gcp 
-
-gcloud beta compute instances create ch-v21-5 --project=staging-btc-etl  --zone=us-central1-a  --machine-type=n1-highmem-16  --deletion-protection  --network-interface=network-tier=PREMIUM,subnet=default  --maintenance-policy=MIGRATE   --service-account=549153015856-compute@developer.gserviceaccount.com  --scopes="https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append"  --create-disk=auto-delete=yes,boot=yes,device-name=ch-v21-5-data,image=projects/staging-btc-etl/global/images/goldenimage-packer-2022-02-02,mode=rw,size=50,type=projects/staging-btc-etl/zones/us-central1-a/diskTypes/pd-balanced  --shielded-vtpm  --shielded-integrity-monitoring  --shielded-secure-boot  --labels=env=prod,externaldisk=true,manual=true,patchmgmt=true,type=clickhouse  --reservation-affinity=any
+~gcloud beta compute instances create ch-v21-5 --project=staging-btc-etl  --zone=us-central1-a  --machine-type=n1-highmem-16  --deletion-protection  --network-interface=network-tier=PREMIUM,subnet=default  --maintenance-policy=MIGRATE   --service-account=549153015856-compute@developer.gserviceaccount.com  --scopes="https://www.googleapis.com/auth/devstorage.read_only,https://www.googleapis.com/auth/logging.write,https://www.googleapis.com/auth/monitoring.write,https://www.googleapis.com/auth/servicecontrol,https://www.googleapis.com/auth/service.management.readonly,https://www.googleapis.com/auth/trace.append"  --create-disk=auto-delete=yes,boot=yes,device-name=ch-v21-5-data,image=projects/staging-btc-etl/global/images/goldenimage-packer-2022-02-02,mode=rw,size=50,type=projects/staging-btc-etl/zones/us-central1-a/diskTypes/pd-balanced  --shielded-vtpm  --shielded-integrity-monitoring  --shielded-secure-boot  --labels=env=prod,externaldisk=true,manual=true,patchmgmt=true,type=clickhouse  --reservation-affinity=any~
+* TODO change font
+- change emacs global font size
+~(set-face-attribute 'default nil
+                    ;; :family "PragmataPro Liga"
+                    :family "cascadia code"
+                    :height 120
+                    :weight 'normal
+                    :width  'normal)~
 

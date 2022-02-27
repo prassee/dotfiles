@@ -1,5 +1,0 @@
-* logg
-- jlsj /asdfsadf/  ~this is code~ =verbatim=
-- /abcd/ /efgn/  asdfasdf =verbatim= ~asfsdf~
-- *bold* now italics /italics/  asfaslk 
- 

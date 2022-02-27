@@ -39,11 +39,3 @@ sequenceDiagram
 #+RESULTS:
 [[file:test2.png]]
 
- #+begin_src mermaid :file testx.png
-   sequencediagram
-   B --> C: send
-   C --> E: receive
- #+end_src
-
- #+RESULTS:
- [[file:testx.png]]

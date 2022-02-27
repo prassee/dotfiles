@@ -274,6 +274,10 @@ WHERE
 #+END_SRC
 
 * SQL to propogate write
+
+~SET max_memory_usage=900000000000000;
+SET max_insert_threads=14;~
+
 #+begin_src
 SET max_memory_usage=900000000000000;
 SET max_insert_threads=14;

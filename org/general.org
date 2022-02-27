@@ -4,7 +4,7 @@
  - sharded tables
  - mat *.views*
 <2022-02-05 Sat 05:47>
-** TODO restore tg                                                        :tg:  
+** TODO restore tg :tg:  
  - *gadmin* status
  - see if there are any load jobs
  - gsql usegraph ethereum show loading status all 

@@ -10,8 +10,11 @@ Xft.lcdfilter: lcddefault
 ! URxvt.*boldFont:xft:terminus:size=14
 !URxvt.font: xft:DejaVu Sans:pixelsize=14,xft:Symbola,xft:Noto Emoji:minspace=False
 
-URxvt.font: xft:PragmataPro Mono Liga:size=20.4,xft:PragmataPro Mono Liga,xft:Noto Color Emoji:minspace=True
-URxvt*boldFont: xft:PragmataPro Mono Liga:size=20.4,xft:Noto Color Emoji
+! URxvt.font: xft:PragmataPro Mono Liga:size=20.4,xft:PragmataPro Mono Liga,xft:Noto Color Emoji:minspace=True
+! URxvt*boldFont: xft:PragmataPro Mono Liga:size=20.4,xft:Noto Color Emoji
+
+URxvt.font: xft:Jetbrains Mono:size=16,xft:Jetbrains Mono,xft:Noto Color Emoji:minspace=True
+URxvt*boldFont: xft:Jetbrains Mono:size=16,xft:Noto Color Emoji
 URxvt.scrollBar: false
 
 !URxvt.background: [50]#000000      
@@ -37,7 +40,7 @@ URxvt.allow_bold:           true
 !URxvt*font: xft:Monospace:pixelsize=14
 
 ! Fix font space
-URxvt*letterSpace: -2
+URxvt*letterSpace: -1
 URxvt*termName:  screen-256color
 
 ! Scrollbar
