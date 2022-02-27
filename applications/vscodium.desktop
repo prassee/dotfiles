@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VSCodium
+Comment=VSCodium
+Exec=/data/cellar/VSCodium-linux-x64-1.64.2/codium --disable-gpu
+Icon=/data/cellar/sublime_text/Icon/128x128/sublime-text.png
+Terminal=false
+StartupWMClass=code

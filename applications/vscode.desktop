@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VSCode
+Comment=VSCode editor 
+Exec=/data/cellar/VSCode-linux-x64/code --disable-gpu
+Icon=/data/cellar/sublime_text/Icon/128x128/sublime-text.png
+Terminal=false
+StartupWMClass=code
